@@ -20,6 +20,7 @@ else
 fi
 
 curl -o "/opt/ApiCheckuser/menu.sh" -f "https://raw.githubusercontent.com/UlekBR/ApiCheckuser/main/menu.sh"
+curl -o "/opt/ApiCheckuser/api.sh" -f "https://raw.githubusercontent.com/UlekBR/ApiCheckuser/main/api.sh"
 
 chmod +x /opt/ApiCheckuser/api
 chmod +x /opt/ApiCheckuser/menu.sh
