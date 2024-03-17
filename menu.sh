@@ -70,7 +70,7 @@ verificar_processo() {
     fi
 }
 
-nome_do_script="GoCheckuser"
+nome_do_script="api"
 
 while true; do
     clear
