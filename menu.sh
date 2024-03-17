@@ -113,18 +113,17 @@ while true; do
             clear
             echo -e "Porta escolhida: $(obter_do_cache 'porta')"
 
-            echo "
-            [Unit]
-            Description=CheckuserApiService
-            After=network.target
+echo "[Unit]
+Description=CheckuserApiService
+After=network.target
 
-            [Service]
-            Type=simple
-            ExecStart=/opt/ApiCheckuser/GoCheckuser
-            Restart=always
+[Service]
+Type=simple
+ExecStart=/opt/ApiCheckuser/api.sh
+Restart=always
 
-            [Install]
-            WantedBy=multi-user.target" | sudo tee /etc/systemd/system/apicheckuser.service > /dev/null
+[Install]
+WantedBy=multi-user.target" | sudo tee /etc/systemd/system/apicheckuser.service > /dev/null
 
             sudo systemctl daemon-reload
             sudo systemctl enable apicheckuser.service
