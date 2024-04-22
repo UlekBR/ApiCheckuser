@@ -70,7 +70,7 @@ verificar_processo() {
     fi
 }
 
-nome_do_script="api"
+nome_do_script="goapiulekcheckuser"
 
 while true; do
     clear
