@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/ApiCheckuser/api
+/opt/ApiCheckuser/goapiulekcheckuser
