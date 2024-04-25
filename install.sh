@@ -14,7 +14,7 @@ if [[ $arch == "x86_64" || $arch == "amd64" || $arch == "x86_64h" ]]; then
     curl -o "/opt/ApiCheckuser/goapiulekcheckuser" -f "https://raw.githubusercontent.com/UlekBR/ApiCheckuser/main/goapiulekcheckuser"
 elif [[ $arch == "aarch64" || $arch == "arm64" || $arch == "armv8-a" ]]; then
     echo "Sistema baseado em arm64 (64-bit ARM)"
-    curl -o "/opt/ApiCheckuser/goapiulekcheckuserArm" -f "https://raw.githubusercontent.com/UlekBR/ApiCheckuser/main/goapiulekcheckuserArm"
+    curl -o "/opt/ApiCheckuser/goapiulekcheckuser" -f "https://raw.githubusercontent.com/UlekBR/ApiCheckuser/main/goapiulekcheckuserArm"
 else
     echo "Arquitetura não reconhecida: $arch"
     return
